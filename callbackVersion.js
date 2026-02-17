@@ -68,4 +68,4 @@ const doSummerChores = (name) => {
   });
 };
 
-doSummerChores('Felix');
+doSummerChores("Felix");
