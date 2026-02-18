@@ -1,9 +1,5 @@
-let isChoreDone = false;
-let allChoresDone = false;
-
 const mowYard = (name, callback) => {
   setTimeout(() => {
-    isChoreDone = true;
     console.log(`${name} mowed the yard.`);
     callback();
   }, 2000);
@@ -11,7 +7,7 @@ const mowYard = (name, callback) => {
 
 const weedEat = (name, callback) => {
   setTimeout(() => {
-    if (isChoreDone && Math.random() > 0.8) {
+    if (Math.random() > 0.8) {
       console.log(`${name} finished using the weed eater.`);
       callback();
     } else {
@@ -22,7 +18,7 @@ const weedEat = (name, callback) => {
 
 const trimHedges = (name, callback) => {
   setTimeout(() => {
-    if (isChoreDone && Math.random > 0.7) {
+    if (Math.random() > 0.7) {
       console.log(`${name} finished trimming the hedges.`);
       callback();
     } else {
@@ -33,7 +29,7 @@ const trimHedges = (name, callback) => {
 
 const collectWood = (name, callback) => {
   setTimeout(() => {
-    if (isChoreDone && Math.random() > 0.6) {
+    if (Math.random() > 0.6) {
       console.log(`${name} finished collecting wood.`);
       callback();
     } else {
@@ -44,7 +40,7 @@ const collectWood = (name, callback) => {
 
 const waterGarden = (name, callback) => {
   setTimeout(() => {
-    if (isChoreDone && Math.random() > 0.5) {
+    if (Math.random() > 0.5) {
       console.log(`${name} finished watering the garden.`);
       callback();
     } else {
@@ -59,7 +55,6 @@ const doSummerChores = (name) => {
       trimHedges(name, () => {
         collectWood(name, () => {
           waterGarden(name, () => {
-            allChoresDone = true;
             console.log(`${name} finished all of their chores!`);
           });
         });
