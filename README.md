@@ -4,4 +4,4 @@ First, a person will carry out a list of chores using callback functions and set
 
 Next, that same person will complete their chores using promises chained in a function by .then() .catch() methods.
 
-Finally, they will do these chores one last time using async/await.
+Finally, they will do these chores one last time using async/await and try-catch.
