@@ -1,4 +1,4 @@
-This is a Code:You exercise for practicing the use of callback functions in JavaScript.
+This is a Code:You exercise for practicing the use of asynchronous code in JavaScript.
 
 First, a person will carry out a list of chores using callback functions and setTimeOut.
 
